@@ -40,7 +40,8 @@ Done
 
 5. Next look at how age at the time of death has changed over time. Add a column to the original dataset to classify each row to one of the following categories (0-18, 19-25, 26-40, 41-64, and 65+). Do this by creating a lookup table with VLOOKUP. Be sure to think about a strategy to deal with missing values. Also, create a "Year Group" dividing the records up based on burial year using a table and a VLOOKUP. Use the following groups: Before 1880, 1880-1900, 1901-1920, After 1920. Use a grouped bar chart to show how the proportion of burials per age group has changed over time. How would you describe the trends in terms of proportion of burials per age group over time?
 
-Done.
+Done. The death from the 41-64 age group decreased over time as well as the 0-18. The 65-100 did not change much in proportion to the other age groups. The 26-40 also dropped dramatically but like 0-18 after the drop from 1800-1900 to 1901-1920 group the proportion stayed the same going to the after 1920 group from 1901-1920.
+Also reflects that deaths dropped in general due to less burials in the 1900's.
 
 6. Create a new column titled Last Name. Extract the last name from the Name column by subsetting to all characters to the left of the comma (see the DataCamp exercise titled "String Information - LEN, SEARCH" from the Data Analysis with Spreadsheets if you need help with this). This will result in many errors for rows missing commas.   
     a.  Drill down to those rows without a comma - what do you notice?  
