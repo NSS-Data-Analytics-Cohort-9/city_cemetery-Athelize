@@ -45,11 +45,35 @@ Also reflects that deaths dropped in general due to less burials in the 1900's.
 
 6. Create a new column titled Last Name. Extract the last name from the Name column by subsetting to all characters to the left of the comma (see the DataCamp exercise titled "String Information - LEN, SEARCH" from the Data Analysis with Spreadsheets if you need help with this). This will result in many errors for rows missing commas.   
     a.  Drill down to those rows without a comma - what do you notice?  
-    b.  What are the most common last names of people buried in this cemetery?  
+
+It seems to be mostly infants that don't have a last name listed. They don't have first names listed either.
+
+    b.  What are the most common last names of people buried in this cemetery? 
+
+Smith, Brown, Johnson, Jones, and Williams are the most common last names.
+ 
     c.  There was a particularly famous person buried in this cemetery. Can you find that person?
 
+I think it is expresident Polk.
+
 7. The Civil War ended in April, 1865, with the last full year of fighting occurring in 1864.  
-    a. Create an additional sheet using FILTER() to pull only the burials that occurred in 1864. Name this new sheet "Burials_1864". In this new sheet, create a new column called age_category. If the individual was age 0 put "Infant". If the individual was not an infant but under age 18, put "Child". Everyone aged 18 and above should be listed as "Adult".
+    a. Create an additional sheet using FILTER() to pull only the burials that occurred in 1864. Name this new sheet "Burials_1864".  
+
+DONE
+
+In this new sheet, create a new column called age_category. If the individual was age 0 put "Infant". If the individual was not an infant but under age 18, put "Child". Everyone aged 18 and above should be listed as "Adult".
+
+DONE 
+
     b.  Find the Mean() age for those classified as "Child" and then again for those classified as "Adult".  
+
+DONE
+
     c.  Create a burial_date column using the DATE() function to combine the burial year, month, and day. What do you notice when you apply this function to your data?   
+
+Not sure? Seems like the peak deaths were in the spring. Lower counts in the winter. The date format seems to return a weird year even though everything is 1864. I changed to mm/dd/yy format to fix it.
+
     d.  Find the last infant to be buried in 1864. Do this by first finding the maximum date that an infant was buried using the MAXIFS function. Then use FILTER to find the infants that were buried on that date. You'll need to apply multiple conditions in your filter. This can be accomplished by multiplying the desired conditions. See https://www.spreadsheetclass.com/excel-filter-function/ for more information about applying complex conditions inside the filter function.
+
+12/29/64
+5-1864	Infant		Dec	12	29	1860	Uknown	1864	F	B	Unknown	0	City	Cold	Negro lot	old grave	child of Jack Curren- f. m. c.	Infant	12/29/64
